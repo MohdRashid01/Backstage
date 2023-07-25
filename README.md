@@ -3,11 +3,10 @@
 **Instructions on How to Deploy Backstage App in Ubuntu 20.04**
 
 Note :- Please try this step on freshly installed ubuntu O/S and Clone this repo 
-        
+```        
 7007 is port number for backend 
-
 3000 is port number for frontend 
-
+```
 # Installing Docker, Nodejs 18, NPM
 
 Note :- Nodejs 16 or 18 version is only support 
