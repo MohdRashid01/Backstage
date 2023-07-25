@@ -50,4 +50,14 @@ Note :-  all this 3 files can be copied/paste from this same repo inside deploy-
    2. sudo apt-get remove npm 
    3. sudo rm /etc/apt/sources.list.d/nodesource.list  
    4. sudo rm -rf /home/ubuntu/.npm 
-   5. sudo apt purge --autoremove nodejs npm 
+   5. sudo apt purge --autoremove nodejs npm
+
+I have tested above all steps it just deploy backstage app in kubernetes cluster whethers its EKS, AKS, GKE.
+
+HERE IS SCREENSHOT
+1. ![image](https://github.com/MohdRashid01/Backstage/assets/7812871/fd7c232a-625a-4273-9fa5-2e84128d0da4)
+
+
+2. ![image](https://github.com/MohdRashid01/Backstage/assets/7812871/9b9397a2-0941-4f8c-8f8c-19a2a18721bb)
+
+
