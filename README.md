@@ -2,8 +2,8 @@
 
 **Instructions on How to Deploy Backstage App in Ubuntu 20.04**
 
-Note :- Please try this step on freshly installed ubuntu O/S
-
+Note :- Please try this step on freshly installed ubuntu O/S and Clone this repo 
+        
 7007 is port number for backend 
 
 3000 is port number for frontend 
