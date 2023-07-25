@@ -13,7 +13,7 @@ kubectl apply -f kubernetes/postgres-service.yaml
 sleep 2
 kubectl apply -f kubernetes/postgres-storage.yaml
                   OR
-kubectl apply -f kubernetes/local-path-storage.yaml                 
+# kubectl apply -f kubernetes/local-path-storage.yaml                 
 sleep 5
 
 # Deploying Backstage manifest files
