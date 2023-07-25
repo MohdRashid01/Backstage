@@ -5,46 +5,49 @@
 Note :- Please try this step on freshly installed ubuntu O/S
 
 7007 is port number for backend 
+
 3000 is port number for frontend 
 
 # Installing Docker, Nodejs 18, NPM
+
 Note :- Nodejs 16 or 18 version is only support 
 
-sudo apt install –y docker.io 
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs 
-sudo npm install -g npm@9.8.0 
+1. sudo apt install –y docker.io 
+2. curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs 
+3. sudo npm install -g npm@9.8.0 
 
-# To verify version's
-node –version 
-yarn –version 
-nvm --version 
-npm version (nvm list, which nvm) 
+# To verify version
+4. node –version
+5. yarn –version 
+6. nvm --version 
+7. npm version (nvm list, which nvm) 
 
 # To setup/install backstage app 
-npx @backstage/create-app@latest 
+8. npx @backstage/create-app@latest 
 
 # Go inside the Backstage App
-cd Backstage-app 
+9. cd Backstage-app 
 
-# Creating a new files inside backstage-app folder this files should be root directory
+# Creating a new files inside backstage-app folder
 Note :-  all this 3 files can be copied/paste from this same repo inside deploy-app folder 
-nano Dockerfile       (we are using from Multi-stage Build Image) 
-nano app-config.yaml 
-nano .dockerignore 
+
+10. nano Dockerfile       (we are using from Multi-stage Build Image) 
+11. nano app-config.yaml 
+12. nano .dockerignore 
  
 # Running and creating docker image
-yarn install 
-yarn build:backend 
-yarn build-image --tag rashidmd/backstage:1.0.0 
-docker image build -t rashidmd/backstage:1.0.0 . 
+13. yarn install 
+14. yarn build:backend 
+15. yarn build-image --tag rashidmd/backstage:1.0.0 
+16. docker image build -t rashidmd/backstage:1.0.0 . 
 
 # Pusing docker image to Docker Hub 
-docker login
-docker push rashidmd/backstage:1.0.0 
+17. docker login
+18. docker push rashidmd/backstage:1.0.0 
 
 **UNINSTALL NODEJS, NPM**
-    sudo apt-get remove nodejs 
-    sudo apt-get remove npm 
-    sudo rm /etc/apt/sources.list.d/nodesource.list  
-    sudo rm -rf /home/ubuntu/.npm 
-    sudo apt purge --autoremove nodejs npm 
+   1. sudo apt-get remove nodejs 
+   2. sudo apt-get remove npm 
+   3. sudo rm /etc/apt/sources.list.d/nodesource.list  
+   4. sudo rm -rf /home/ubuntu/.npm 
+   5. sudo apt purge --autoremove nodejs npm 
