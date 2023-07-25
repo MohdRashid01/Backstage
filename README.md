@@ -11,9 +11,9 @@ Note :- Please try this step on freshly installed ubuntu O/S and Clone this repo
 
 Note :- Nodejs 16 or 18 version is only support 
 ```
-1. sudo apt install –y docker.io 
+1. sudo apt install –y docker.io
 2. curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs 
-3. sudo npm install -g npm@9.8.0 
+3. sudo npm install -g npm@9.8.0
 ```
 # To verify version
 ```
@@ -57,7 +57,17 @@ Note :-  all this 3 files can be copied/paste from this same repo inside deploy-
    4. sudo rm -rf /home/ubuntu/.npm 
    5. sudo apt purge --autoremove nodejs npm
 ```
-
+# For Installation in Minikube 
+```
+1. sudo apt install docker.io
+2. sudo usermod -aG docker $USER && newgrp docker
+3. curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+4. sudo dpkg -i minikube_latest_amd64.deb
+5. minikube start
+6. kubectl get po -A
+7. minikube kubectl -- get po -A
+8. alias kubectl="minikube kubectl --"
+```
 I have tested above all steps it just deploy backstage app in kubernetes cluster whethers its EKS, AKS, GKE.
 
 HERE IS SCREENSHOT
