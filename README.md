@@ -17,8 +17,8 @@ Note :- Nodejs 16 or 18 version is only support
 ```
 # To verify version
 ```
-4. node –version
-5. yarn –version 
+4. node --version
+5. yarn--version 
 6. nvm --version 
 7. npm version (nvm list, which nvm) 
 ```
