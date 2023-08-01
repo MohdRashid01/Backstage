@@ -3,24 +3,24 @@
 # Deploying K8s manifest files
 
 kubectl get pods -A
-kubectl apply -f kubernetes/namespace.yaml
+kubectl apply -f namespace.yaml
 sleep 5
 
 # Deploying Postgres manifest files
-kubectl apply -f kubernetes/postgres-secrets.yaml
-kubectl apply -f kubernetes/postgres.yaml
-kubectl apply -f kubernetes/postgres-service.yaml
+kubectl apply -f postgres-secrets.yaml
+kubectl apply -f postgres.yaml
+kubectl apply -f postgres-service.yaml
 sleep 2
-kubectl apply -f kubernetes/postgres-storage.yaml
+kubectl apply -f postgres-storage.yaml
                   OR
-# kubectl apply -f kubernetes/local-path-storage.yaml                 
+# kubectl apply -f local-path-storage.yaml                 
 sleep 5
 
 # Deploying Backstage manifest files
-kubectl apply -f kubernetes/backstage-secrets.yaml
-kubectl apply -f kubernetes/backstage-service.yaml
+kubectl apply -f backstage-secrets.yaml
+kubectl apply -f backstage-service.yaml
 sleep 2
-kubectl apply -f kubernetes/backstage.yaml
+kubectl apply -f backstage.yaml
 
 
 # To view all running deployment
