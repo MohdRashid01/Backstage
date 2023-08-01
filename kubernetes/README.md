@@ -1,6 +1,6 @@
 ```
-1. sudo chown 777 deploy.sh
-2. ./deploy.sh
+1. sudo chown 777 install-k8s.sh
+2. ./install-k8s.sh
 ```
 Notes 
 ```
