@@ -12,8 +12,9 @@ Note :- Please try this step on freshly installed ubuntu O/S and Clone this repo
 Note :- Nodejs 16 or 18 version is only support 
 ```
 1. sudo apt install –y docker.io
-2. curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs 
-3. sudo npm install -g npm@9.8.0
+2. curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs
+3. sudo apt-get update && sudo apt-get install yarn
+   sudo npm install -g npm@9.8.0
 ```
 # To verify version
 ```
