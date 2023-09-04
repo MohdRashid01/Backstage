@@ -13,6 +13,9 @@ Note :- Nodejs 16 or 18 version is only support
 ```
 1. sudo apt install –y docker.io
 2. curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs
+    OR
+   curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+   sudo apt-get install -y nodejs
 3. sudo npm install --global yarn
    sudo npm install -g npm@9.8.0
 ```
