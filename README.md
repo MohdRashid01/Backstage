@@ -17,7 +17,7 @@ Note :- Nodejs 16 or 18 version is only support
    curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
    sudo apt-get install -y nodejs
 3. sudo npm install --global yarn
-   sudo npm install -g npm@9.8.0
+   npm install -g npm@10.0.0
 ```
 # To verify version
 ```
