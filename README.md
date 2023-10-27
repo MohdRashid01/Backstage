@@ -1,3 +1,5 @@
+[Hit the Star!](https://github.com/MohdRashid01/Backstage#hit-the-star-star) :star:
+
 # Backstage
 
 **Instructions on How to Deploy Backstage App in Ubuntu 20.04**
