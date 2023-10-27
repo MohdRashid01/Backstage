@@ -1,4 +1,4 @@
-[Hit the Star!](https://github.com/MohdRashid01/Backstage#hit-the-star-star) :star:
+[**Hit the Star!**](https://github.com/MohdRashid01/Backstage#hit-the-star-star) :star:
 
 You can use this repo for build and develop backstage, please hit the star. Thanks!
 
